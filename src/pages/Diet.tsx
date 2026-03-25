@@ -50,7 +50,7 @@ export default function Diet() {
             <img 
               src="/image/diet.png" 
               alt="체중 감량 모델" 
-              className="w-full h-full object-contain md:object-right"
+              className="w-full h-full object-cover object-center md:object-right"
               referrerPolicy="no-referrer"
             />
           </picture>
