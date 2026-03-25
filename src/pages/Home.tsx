@@ -99,7 +99,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
               
               <div className="flex flex-col sm:flex-row items-start gap-3">
                 <a 
-                  href="tel:0632221075"
+                  href="tel:0632217500"
                   target="_top"
                   className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-gray-900 rounded-full text-sm font-bold hover:bg-gray-50 transition-all shadow-lg"
                 >
@@ -370,6 +370,10 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
                 <span className="font-bold text-red-500">일요일 및 공휴일</span>
                 <span className="text-red-500 font-medium">휴진</span>
               </div>
+              <div className="flex items-center gap-2 pt-4 border-t border-beige-200 text-navy-900">
+                <Phone className="w-5 h-5" />
+                <span className="text-lg font-bold">063-221-7500</span>
+              </div>
             </div>
             <button 
               onClick={() => setPage('guide')} 
@@ -413,7 +417,7 @@ export default function Home({ setPage }: { setPage: (page: string) => void }) {
                 네이버 지도에서 보기
               </a>
               <a 
-                href="tel:0632221075"
+                href="tel:0632217500"
                 target="_top"
                 className="flex-1 flex items-center justify-center gap-2 px-5 py-3.5 bg-navy-900 text-white rounded-xl text-sm font-bold hover:bg-navy-800 shadow-sm transition-colors"
               >

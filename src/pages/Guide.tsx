@@ -68,7 +68,7 @@ export default function Guide() {
             
             <div className="space-y-6 flex-grow">
               <a 
-                href="tel:0632221075" 
+                href="tel:0632217500" 
                 target="_top"
                 className="flex items-start gap-4 group cursor-pointer"
               >
@@ -77,7 +77,7 @@ export default function Guide() {
                 </div>
                 <div>
                   <h4 className="font-bold text-navy-900 mb-1 group-hover:text-navy-700 transition-colors">전화 문의</h4>
-                  <p className="text-navy-600 text-lg group-hover:text-navy-800 transition-colors">063-222-1075</p>
+                  <p className="text-navy-600 text-lg group-hover:text-navy-800 transition-colors">063-221-7500</p>
                 </div>
               </a>
               
@@ -193,7 +193,7 @@ export default function Guide() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="tel:0632221075" 
+              href="tel:0632217500" 
               target="_top"
               className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-navy-900 rounded-full text-base font-bold hover:bg-navy-50 transition-colors shadow-md w-full md:w-auto"
             >

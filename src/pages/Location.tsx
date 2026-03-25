@@ -178,7 +178,7 @@ export default function Location() {
                 <span className="pt-0.5 break-keep">처음 방문인데 길이 헷갈리면 어떻게 하나요?</span>
               </h4>
               <p className="text-navy-600 leading-relaxed break-keep pl-10">
-                전화(<strong className="text-navy-900">063-222-1075</strong>) 또는 <strong className="text-navy-900">카카오톡 채널</strong>로 문의해 주시면, 환자분의 현재 위치에 맞춰 가장 빠른 방문 방법을 친절히 안내해 드립니다.
+                전화(<strong className="text-navy-900">063-221-7500</strong>) 또는 <strong className="text-navy-900">카카오톡 채널</strong>로 문의해 주시면, 환자분의 현재 위치에 맞춰 가장 빠른 방문 방법을 친절히 안내해 드립니다.
               </p>
             </div>
           </div>
@@ -215,7 +215,7 @@ export default function Location() {
             </a>
 
             <a 
-              href="tel:0632221075" 
+              href="tel:0632217500" 
               target="_top"
               className="flex flex-col items-center justify-center gap-4 p-10 bg-navy-900 hover:bg-navy-800 text-white rounded-3xl transition-colors group shadow-md"
             >
@@ -224,7 +224,7 @@ export default function Location() {
               </div>
               <div className="text-center">
                 <span className="block text-sm text-navy-300 mb-1">전화 문의</span>
-                <span className="text-2xl font-bold">063-222-1075</span>
+                <span className="text-2xl font-bold">063-221-7500</span>
               </div>
             </a>
           </div>

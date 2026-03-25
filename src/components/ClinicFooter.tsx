@@ -17,6 +17,7 @@ export default function ClinicFooter({ setCurrentPage }: ClinicFooterProps) {
             <div className="text-sm text-navy-600 leading-relaxed">
               <p>몸의 불균형을 바로잡고,</p>
               <p>일상을 회복하는 길을 함께합니다.</p>
+              <p className="mt-4 font-bold text-navy-900">대표전화: 063-221-7500</p>
             </div>
           </div>
 

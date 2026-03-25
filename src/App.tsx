@@ -11,6 +11,7 @@ import Location from "./pages/Location";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ClinicFooter from "./components/ClinicFooter";
 import Logo from "./components/Logo";
+import FloatingButtons from "./components/FloatingButtons";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -215,18 +216,21 @@ export default function App() {
                   카카오톡 상담하기
                 </a>
                 <a 
-                  href="tel:0632221075"
+                  href="tel:0632217500"
                   target="_top"
                   className="flex items-center justify-center gap-2 w-full py-3 bg-navy-900 text-white rounded-xl text-sm font-bold shadow-lg active:scale-95 transition-transform"
                 >
                   <Phone className="w-4 h-4" />
-                  063-222-1075
+                  063-221-7500
                 </a>
               </div>
             </motion.div>
           </>
         )}
       </AnimatePresence>
+
+      {/* Floating Buttons */}
+      <FloatingButtons />
 
       {/* Main Content Area */}
       <main className="flex-grow flex flex-col items-center w-full">
@@ -248,6 +252,10 @@ export default function App() {
               <Logo variant="white" className="h-10 opacity-90" />
             </div>
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+              <div className="flex items-center gap-2 text-sm">
+                <Phone className="w-4 h-4" />
+                <span className="font-bold">063-221-7500</span>
+              </div>
               <button 
                 onClick={() => setCurrentPage('privacy')}
                 className="text-sm hover:text-white transition-colors"

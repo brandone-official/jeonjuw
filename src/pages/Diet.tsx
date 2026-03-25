@@ -272,7 +272,7 @@ export default function Diet() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="tel:0632221075" 
+              href="tel:0632217500" 
               target="_top"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-navy-900 text-white rounded-full text-base font-bold hover:bg-navy-800 transition-colors shadow-sm w-full md:w-auto"
             >
