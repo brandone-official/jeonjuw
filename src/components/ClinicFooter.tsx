@@ -60,17 +60,37 @@ export default function ClinicFooter({ setCurrentPage }: ClinicFooterProps) {
       </div>
       
       {/* Bottom Copyright Section (Navy) */}
-      <div className="bg-navy-900 py-8 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-[12px] text-beige-50/80">
-          <div className="flex gap-6">
-            <button 
-              onClick={() => setCurrentPage('/privacy')} 
-              className="hover:text-white hover:underline transition-colors font-medium"
-            >
-              개인정보처리방침
-            </button>
+      <div className="bg-navy-900 py-10 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8 pb-8 border-b border-navy-800">
+            <div className="flex flex-wrap gap-6">
+              <button 
+                onClick={() => setCurrentPage('/terms')} 
+                className="text-[13px] text-beige-50/80 hover:text-white transition-colors"
+              >
+                이용약관
+              </button>
+              <button 
+                onClick={() => setCurrentPage('/privacy')} 
+                className="text-[13px] text-beige-50/80 hover:text-white transition-colors font-bold"
+              >
+                개인정보처리방침
+              </button>
+            </div>
+            <p className="text-[12px] text-beige-50/60">© 2026 Jeonju W Korean Medicine Clinic. All rights reserved.</p>
           </div>
-          <p>© 2026 Jeonju W Korean Medicine Clinic. All rights reserved.</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[12px] text-beige-50/60 leading-relaxed">
+            <div className="space-y-1">
+              <p><span className="text-beige-50/40 mr-2">의료기관명</span> 전주더블유(W)한의원</p>
+              <p><span className="text-beige-50/40 mr-2">대표자</span> 박승현</p>
+              <p><span className="text-beige-50/40 mr-2">주소</span> 전북 전주시 완산구 홍산1길 21 207호(효자동 서희스타일스 상가)</p>
+            </div>
+            <div className="space-y-1">
+              <p><span className="text-beige-50/40 mr-2">대표전화</span> 063-221-7500</p>
+              <p><span className="text-beige-50/40 mr-2">사업자등록번호</span> 887-23-01841</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

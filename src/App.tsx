@@ -10,6 +10,7 @@ import Metabolic from "./pages/Metabolic";
 import Guide from "./pages/Guide";
 import Location from "./pages/Location";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
 import TrafficAccidentNew from "./pages/TrafficAccidentNew";
 import ClinicFooter from "./components/ClinicFooter";
 import Logo from "./components/Logo";
@@ -253,30 +254,45 @@ export default function App() {
           <Route path="/guide" element={<Guide />} />
           <Route path="/location" element={<Location />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </main>
 
       {/* Footer */}
       {location.pathname === '/' ? (
         <footer className="bg-navy-900 text-navy-50/70 py-12 px-6 border-t border-navy-800 mt-auto">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex items-center">
-              <Logo variant="white" className="h-10 opacity-90" />
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-              <div className="flex items-center gap-2 text-sm">
-                <Phone className="w-4 h-4" />
-                <span className="font-bold">063-221-7500</span>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8 pb-8 border-b border-navy-800">
+              <div className="flex items-center">
+                <Logo variant="white" className="h-10 opacity-90" />
               </div>
-              <button 
-                onClick={() => navigate('/privacy')}
-                className="text-sm hover:text-white transition-colors"
-              >
-                개인정보처리방침
-              </button>
-              <p className="text-sm text-center md:text-left">
-                © 2026 Jeonju W Korean Medicine Clinic. All rights reserved.
-              </p>
+              <div className="flex flex-wrap gap-4 md:gap-8">
+                <button 
+                  onClick={() => navigate('/terms')}
+                  className="text-sm hover:text-white transition-colors"
+                >
+                  이용약관
+                </button>
+                <button 
+                  onClick={() => navigate('/privacy')}
+                  className="text-sm hover:text-white transition-colors font-bold"
+                >
+                  개인정보처리방침
+                </button>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[13px] leading-relaxed">
+              <div className="space-y-1">
+                <p><span className="text-navy-300 mr-2">의료기관명</span> 전주더블유(W)한의원</p>
+                <p><span className="text-navy-300 mr-2">대표자</span> 박승현</p>
+                <p><span className="text-navy-300 mr-2">주소</span> 전북 전주시 완산구 홍산1길 21 207호(효자동 서희스타일스 상가)</p>
+              </div>
+              <div className="space-y-1">
+                <p><span className="text-navy-300 mr-2">대표전화</span> 063-221-7500</p>
+                <p><span className="text-navy-300 mr-2">사업자등록번호</span> 887-23-01841</p>
+                <p className="mt-4">© 2026 Jeonju W Korean Medicine Clinic. All rights reserved.</p>
+              </div>
             </div>
           </div>
         </footer>
